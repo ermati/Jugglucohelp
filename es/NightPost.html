@@ -10,32 +10,32 @@
 <body lang="en-US" dir="ltr"><p>Subir a servidor Nightscout.</p>
 <p>En la mayoría de los casos puedes usar el servidor web en Juggluco o
 <a href="https://www.juggluco.nl/Juggluco/cmdline">juggluco-server</a>,
-only AAPS and NSclient refuse to work when not connected to
+sólo AAPS y NSclient se niegan a trabajar cuando no están conectados a
 <a href="https://github.com/nightscout/cgm-remote-monitor">cgm-remote-monitor</a>.
-The web server in Juggluco also gives amounts in the form of
-Nightscout treatments
+El servidor web de Juggluco también proporciona cantidades en forma de
+tratamientos Nightscout
 (<a href="https://www.juggluco.nl/Juggluco/webserver.html">https://www.juggluco.nl/Juggluco/webserver.html</a>),
-the uploader only uploads glucose values.</p>
-<p>All stream values are uploaded to the Nightscout server at the
-moment they arrive. When multiple sensor are used, all values of all
-sensors are uploaded. Some Garmin watch apps/faces/widgets assume
-that the values are space 5 minutes apart. When they receive glucose
-values one minute apart, they will only show the last fifth of the
-curve. For that reason, the webserver incorporated in Juggluco spaces
-the values 5 minutes apart, except when &quot;interval=secs&quot; is
-set to a lower value.</p>
-<p><b>URL</b>: the url should be in the form of https://hostname:port
-for example, https://myname.herokuapp.com:6789</p>
-<p><b>Active</b>: Turn on uploader</p>
-<p><b>Resend data</b>: Upload all data again to the Nightscout server</p>
-<p><b>Send now</b>: Normally data is immediately send when it arrives
-from the sensor or a mirror connection. Press on this button when for
-some reason a previous attempt failed.</p>
-<p>The WearOS version Juggluco 4.15.0 and later can also upload
-glucose values to Nightscout. In nearly all cases you can better send
-them via a Juggluco version on a phone or tablet or via Juggluco
-server on a computer. It will drain the battery, especially when it
-is unable to contact the Nightscout server, so you can better turn
-<i>Active</i> off when there is no reliable connection.</p>
+solo pueden subirse valores de glucosa.</p>
+<p>Todos los valores de tendencias se suben al servidor Nightscout al momento.
+Cuando se usan varios sensores, se suben los valores de todos los sensores.
+Algunos relojes o aparatos Garmin, asumen que los valores tienen una separación
+de 5 minutos. Cuando reciben valores de glucosa con un minuto de diferencia,
+sólo mostrarán el úlitmo quinto de la curva.
+Por esta razón, el servidor incorporado en Juggluco separa
+los valores con 5 minutos de diferencia, excepto cuando &quot;intervalo=secs&quot; se 
+establece en un valor más bajo.</p>
+<p><b>URL</b>: la url debería tener la forma de https://hostname:port
+por ejemplo, https://myname.herokuapp.com:6789</p>
+<p><b>Activar</b>: Activar cargador</p>
+<p><b>Reenviar datos</b>: Sube todos los datos de nuevo al servidor Nightscout</p>
+<p><b>Enviar ahora</b>: Normalmente los datos son inmediatamente enviados cuando llegan 
+desde el sensor o una conexión espejo. Presionar este botón cuando por
+alguna razón falle algún intento anterior.</p>
+<p>La versión WearOS Juggluco 4.15.0 y posteriores pueden también subir
+valores de glucosa a Nightscout. En casi todos los casos es mejor enviar
+a través de una versión de Juggluco en un teléfono o tableta o a través de Juggluco
+en un ordenador. Esto agotará la batería, especialmente cuando no 
+es posible conectar al servidor, así que mejor apagar
+<i>Activar</i> cuando no se dispone de una conexión fiable.</p>
 </body>
 </html>
