@@ -15,21 +15,21 @@
 		p { margin-bottom: 0.1in; background: transparent }
 	</style>
 </head>
-<body lang="en-US" dir="ltr"><h1 class="western">Keep functioning</h1>
-<p style="line-height: 100%; margin-bottom: 0in">Normally when an
-android device is not used, it enters doze mode to use less energy.
-If you need to reliably receive glucose values via Bluetooth or
-TCP/IP you need to switch off battery optimizations for Juggluco and
-sometimes also the whole device to prevent that Androids switches off
-Juggluco. A lot of devices have additional battery optimization-,
-activity in the background - and start at boot settings that have to
-be changed. You can find them under Android settings-&gt;Battery. See
+<body lang="en-US" dir="ltr"><h1 class="western">Seguir funcionando</h1>
+<p style="line-height: 100%; margin-bottom: 0in">Normalmente, cuando no se utiliza 
+un dispositivo Android, entra en modo de reposo para utilizar menos energía.
+Si necesita recibir valores de glucosa de forma fiable a través de Bluetooth o
+TCP/IP necesita desactivar las optimizaciones de batería para Juggluco y, a veces, 
+también para todo el dispositivo para evitar que Android apague Juggluco. 
+Muchos dispositivos tienen optimización adicional de la batería,
+actividad en segundo plano y comenzar en la configuración de arranque que debe
+ser cambiado. Puedes encontrarlos en las configuraciones de Android settings-&gt;Battery. Ver
 <a href="https://dontkillmyapp.com/">https://dontkillmyapp.com</a>.</p>
-<p style="line-height: 100%; margin-bottom: 0in">When using Watch 4
-or 5, you have to <i>Allow background activity</i> in the Galaxy
-Wearable companion app, Watch settings-&gt;Apps-&gt;Juggluco. For
-watches that don't have this setting you can use the following
-command from your computer:</p>
+<p style="line-height: 100%; margin-bottom: 0in">Al usar Watch 4
+o 5, debes <i>Permitir actividad en segundo plano</i> en configuración de 
+la aplicación del Juggluco del Galaxy. Para
+Relojes que no tienen esta configuración, puedes usar lo siguiente
+comando desde tu ordenador:</p>
 <p style="line-height: 100%; margin-bottom: 0in">adb shell cmd appops
 set tk.glucodata RUN_IN_BACKGROUND allow</p>
 <p style="line-height: 100%; margin-bottom: 0in"><a href="https://www.juggluco.nl/JugglucoWearOS/install/adb.html">Information
